@@ -1,7 +1,7 @@
 # angelVideo
 简易video弹窗播放器，依赖jQuery，支持多个视频、可拖动。
 
-
+<pre>
 function dialogPlay(){
     $.angelvideo({
         width:800,
@@ -22,3 +22,4 @@ function dialogPlay(){
         ]
     });
 }
+</pre>
