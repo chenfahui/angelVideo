@@ -128,6 +128,7 @@ var VOLUME = (window.localStorage && localStorage.getItem('volume')) ? localStor
             /*暂停*/
             player.inPause = function(){
                 $angelVideo.pause();
+                $load.addClass('hide');
                 $play.removeClass('hide');
                 isPlay = false;
                 player.controlsHide();
