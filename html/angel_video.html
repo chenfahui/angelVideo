@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+<meta charset="UTF-8">
+<title>视频播放器</title>
+<link rel="stylesheet" type="text/css" href="../css/angelVideo.css">
+</head>
+<body>
+
+    <div style="padding:50px;text-align:center;">
+        <a href="javascript:;" onclick="dialogPlay();">http://vjs.zencdn.net/v/oceans.mp4</a>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/angelVideo.js"></script>
+    <script>   
+        ﻿function dialogPlay(){
+            $.angelvideo({
+                width:800,
+                height:340,
+                video:[
+                    {
+                        title:'原始视频1',
+                        uri:'http://vjs.zencdn.net/v/oceans.mp4'
+                    },
+                    {
+                        title:'原始视频2',
+                        uri:'http://vjs.zencdn.net/v/oceans.mp4'
+                    },
+                    {
+                        title:'剪辑视频',
+                        uri:'http://vjs.zencdn.net/v/oceans.mp4'
+                    }
+                ]
+            });
+        }
+    </script>
+    
+</body>
+</html>
